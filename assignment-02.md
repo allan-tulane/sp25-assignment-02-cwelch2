@@ -18,7 +18,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .  
 .  
 . 
-.  W(n) = O(n^(log_3^(2))
+.  W(n) = O(n^(log_3^(2))  leaf dominant
 . 
 .  
 . 
@@ -28,7 +28,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .
 .  
 . 
-.  W(n) = O(n^(log_4^(5))
+.  W(n) = O(n^(log_4^(5)) leaf dominant
 . 
 .  
 .  
@@ -38,7 +38,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .  
 . 
 .  
-.  O(n log n)
+.  O(n log n)  balanced
 . 
 .  
 .
@@ -46,7 +46,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 * $W(n)=9W(n/3)+n^2$
 .  
 .
-. O(n^2 log n)
+. O(n^2 log n)  balanced
 .  
 . 
 .  
@@ -59,7 +59,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .
 .  
 .  
-.  O(n^3 log n)
+.  O(n^3 log n) balanced
 .  
 . 
 .  
@@ -70,7 +70,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .  
 .  
 . 
-.  O(n^(3/2) log n)
+.  O(n^(3/2) log n) root dominant
 . 
 .  
 .  
@@ -80,7 +80,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .  
 .  
 . 
-.  O(n)
+.  O(n) leaf dominant
 . 
 .  
 .  
@@ -90,7 +90,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .  
 .  
 .  
-.  O(n^(c+1))
+.  O(n^(c+1)) root dominant
 .  
 . 
 .  
