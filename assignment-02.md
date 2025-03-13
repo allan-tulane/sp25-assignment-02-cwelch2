@@ -18,7 +18,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .  
 .  
 . 
-.  
+.  W(n) = O(n^(log_3^(2))
 . 
 .  
 . 
@@ -28,7 +28,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .
 .  
 . 
-.  
+.  W(n) = O(n^(log_4^(5))
 . 
 .  
 .  
@@ -38,7 +38,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .  
 . 
 .  
-.  
+.  O(n log n)
 . 
 .  
 .
@@ -46,7 +46,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 * $W(n)=9W(n/3)+n^2$
 .  
 .
-. 
+. O(n^2 log n)
 .  
 . 
 .  
@@ -59,7 +59,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .
 .  
 .  
-.  
+.  O(n^3 log n)
 .  
 . 
 .  
@@ -70,7 +70,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .  
 .  
 . 
-.  
+.  O(n^(3/2) log n)
 . 
 .  
 .  
@@ -80,7 +80,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .  
 .  
 . 
-.  
+.  O(n)
 . 
 .  
 .  
@@ -90,7 +90,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .  
 .  
 .  
-.  
+.  O(n^(c+1))
 .  
 . 
 .  
@@ -100,7 +100,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .  
 .  
 .  
-.  
+.  O(log log n)
 .  
 . 
 . 
@@ -128,12 +128,16 @@ Suppose that for a given task you are choosing between the following three algor
 
 
 .  
+.  Algorithm A: 5W(n/2) + O(n) = O(n^(log_2 5))
 .  
-.  
+.  Algorithm B: 2W(n-1) + O(1) = O(2^n)
+. 
 .  
 . 
-. 
+. Algorithm C: 9W(n/3) + O(n^2) = O(n^2 log n)
 
+
+Among these algorithms, I would choose C, as it is the most asymptotically efficient.
 
 
 ## Part 3: Parenthesis Matching
@@ -160,7 +164,7 @@ Below, we'll solve this problem three different ways, using iterate, scan, and d
 
 **3b.** What are the recurrences for the Work and Span of this solution? What are their Big Oh solutions?
 
-**enter answer here**
+**W(n) = W(n-1) + O(1) = O(n)      S(n) = S(n-1) + O(1) = O(n), so, both work and span are O(n)**
 
 .  
 . 
@@ -176,7 +180,7 @@ Below, we'll solve this problem three different ways, using iterate, scan, and d
 
 **3d.** Assume that any `map`s are done in parallel, and that we use the efficient implementation of `scan` from class. What are the recurrences for the Work and Span of this solution? 
 
-**enter answer here**
+**Work: O(n) Span: O(log n)**
 
 .  
 .  
@@ -197,7 +201,7 @@ Below, we'll solve this problem three different ways, using iterate, scan, and d
 
 **3f.** Assuming any recursive calls are done in parallel, what are the recurrences for the Work and Span of this solution? What are their Big Oh solutions?
 
-**enter answer here**
+**Work: O(n) Span: O(log n)**
 
 .  
 . 
